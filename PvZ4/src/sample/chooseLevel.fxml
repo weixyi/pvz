@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<AnchorPane fx:id="chooseLevel" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.LevelController">
+    <children>
+        <AnchorPane layoutY="30.0" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="690.0" fitWidth="1280.0" layoutY="30.0" opacity="0.7" pickOnBounds="true">
+               <image>
+                  <Image url="@../images/lawn.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnMenu" layoutX="59.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#menu" text="Menu" />
+            <Button layoutX="225.0" layoutY="540.0" mnemonicParsing="false" onMouseClicked="#launchLevelEasy" text="Easy" />
+            <Button layoutX="602.0" layoutY="540.0" mnemonicParsing="false" onMouseClicked="#launchLevelMedium" text="Medium" />
+            <Button layoutX="1026.0" layoutY="540.0" mnemonicParsing="false" onMouseClicked="#launchLevelHard" text="Hard" />
+            <Button fx:id="btnExit" layoutX="1154.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#exit" text="Exit" />
+            <ImageView fx:id="imgLevelEasy" fitHeight="246.0" fitWidth="250.0" layoutX="127.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/level1.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgLevelMedium" fitHeight="257.0" fitWidth="246.0" layoutX="517.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/level2.PNG" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgLevelHard" fitHeight="313.0" fitWidth="246.0" layoutX="929.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/level3.PNG" />
+               </image>
+            </ImageView>
+         </children></AnchorPane>
+        <MenuBar layoutX="193.0" layoutY="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="Edit">
+                    <items>
+                        <MenuItem mnemonicParsing="false" text="Delete" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                    <items>
+                        <MenuItem fx:id="helpAbout" mnemonicParsing="false" text="About" />
+                        <MenuItem fx:id="helpContact" mnemonicParsing="false" text="Contact" />
+                    </items>
+                </Menu>
+            </menus>
+        </MenuBar>
+    </children>
+</AnchorPane>

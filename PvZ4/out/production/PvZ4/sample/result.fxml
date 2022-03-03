@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="result" maxHeight="720.0" maxWidth="1280.0" minHeight="720.0" minWidth="1280.0" prefHeight="720.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ResultController">
+<children>
+    <AnchorPane layoutY="30.0" prefHeight="720.0" prefWidth="1280.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <children>
+            <ImageView fitHeight="690.0" fitWidth="1280.0" layoutY="30.0" opacity="0.7" pickOnBounds="true">
+                <image>
+                    <Image url="@../images/lawn.png" />
+                </image>
+            </ImageView>
+            <Button fx:id="btnMenu" layoutX="59.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#menu" text="Menu" />
+            <Button fx:id="btnExit" layoutX="1154.0" layoutY="79.0" mnemonicParsing="false" onMouseClicked="#exit" text="Exit" />
+            <TextField fx:id="tfGameResults" layoutX="404.0" layoutY="337.0" prefHeight="32.0" prefWidth="466.0" />
+        </children></AnchorPane>
+    <MenuBar layoutX="193.0" layoutY="8.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Edit">
+                <items>
+                    <MenuItem mnemonicParsing="false" text="Delete" />
+                </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+                <items>
+                    <MenuItem fx:id="helpAbout" mnemonicParsing="false" text="About" />
+                    <MenuItem fx:id="helpContact" mnemonicParsing="false" text="Contact" />
+                </items>
+            </Menu>
+        </menus>
+    </MenuBar>
+</children>
+</AnchorPane>
